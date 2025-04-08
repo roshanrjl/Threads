@@ -24,6 +24,7 @@ class Mythread implements Runnable
 
         thread1.start();
         t.start();
+        t.setPriority(Thread.MAX_PRIORITY);
         
     }
 
