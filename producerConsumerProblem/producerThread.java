@@ -5,8 +5,7 @@ public class producerThread extends Thread{
     producerThread(company c){
         this.c =c;
     }
-
-   public void run(){
+Runnable procedure = ()->{
     int i=1;
     while(true){
         this.c.produce_item(i);
@@ -18,6 +17,6 @@ public class producerThread extends Thread{
         }
         i++;
     }
-   }
+   };
     
 }
